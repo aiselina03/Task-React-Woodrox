@@ -1,0 +1,105 @@
+.footer {
+  width: 100%;
+  background: #222222;
+  font-family: "Roboto", sans-serif;
+  .footerContainer {
+    width: 70%;
+    margin: 0 auto;
+    .foot {
+      height: 50vh;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      place-content: center;
+      gap: 120px;
+      h3 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 25px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+        font-family: "Roboto", sans-serif;
+        color: #777777;
+        margin-bottom: 30px;
+      }
+      .about {
+        a {
+          color: #faba00;
+        }
+      }
+      .newsletter {
+        input {
+          height: 39.3px;
+          background: #fff;
+          width: 80%;
+          border: none;
+          padding: 0px 40px;
+          font-size: 14px;
+          color: #cccccc;
+          outline: none;
+        }
+        button {
+          height: 40px;
+          padding: 2px 15px;
+          background: #faba00;
+          border: 1px solid #faba00;
+          width: 42px;
+          cursor: pointer;
+          color: #fff;
+        }
+      }
+      .follow {
+        .fa-brands {
+          color: #cccccc;
+          font-size: 14px;
+          margin-right: 20px;
+          cursor: pointer;
+          transition: all 600ms;
+          &:hover {
+            color: #ffc107;
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive 
+@media only screen and (max-width: 768px) {
+  .footer {
+    width: 100%;
+    height: auto;
+    .footerContainer {
+      width: 80%;
+
+      .foot {
+        padding: 40px 0;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px;
+       
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px)  and (max-width: 1200px){
+  .footer {
+    width: 100%;
+    height: auto;
+    .footerContainer {
+      width: 80%;
+      .foot {
+        padding: 40px 0;
+        height: auto;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 50px;
+      }
+    }
+  }
+}
+

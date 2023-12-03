@@ -1,0 +1,163 @@
+.contactContainer {
+  width: 70%;
+  margin: 0 auto;
+  .contactInfo {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+    .map {
+      iframe {
+        width: 1100px;
+        height: 400px;
+      }
+    }
+    .infoRow {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 90px;
+      margin-top: 50px;
+      .infoItems {
+        .infoItem {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+          margin-bottom: 20px;
+          .icon {
+            .fa-light {
+              font-size: 24px;
+              color: #faba00;
+              cursor: pointer;
+            }
+          }
+          .info {
+            h3 {
+              font-size: 16px;
+              line-height: 24px;
+
+              font-weight: bold;
+              margin-bottom: 0px;
+              color: #222222;
+            }
+            p {
+              font-size: 14px;
+              line-height: 24px;
+
+              color: #777777;
+            }
+          }
+        }
+      }
+      .sendInfo {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+        input {
+          font-size: 14px;
+          border: 1px solid #eeeeee;
+          font-family: "Roboto", sans-serif;
+          padding-left: 20px;
+          outline: none;
+          margin-bottom: 10px;
+          width: 350px;
+          height: 38px;
+          background-color: #fff;
+        }
+      }
+      .enterMessage {
+        input {
+          height: 135px;
+        }
+        .sendBtn {
+          button {
+            background: #faba00;
+            padding: 15px 40px;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            border: 1px solid #faba00;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 600ms;
+            &:hover {
+              background-color: transparent;
+              color: #faba00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive
+@media only screen and (max-width: 768px) {
+  .contactContainer {
+    width: 80%;
+    margin: 40px auto;
+    .contactInfo {
+      width: 100%;
+      height: auto;
+      .map {
+        iframe {
+          max-width: 100%;
+          height: 400px;
+        }
+      }
+      .infoRow {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        .infoItems {
+          .infoItem {
+            gap: 10px;
+            margin-bottom: 20px;
+          }
+        }
+        .sendInfo {
+          display: grid;
+          grid-template-columns: auto;
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .contactContainer {
+    width: 80%;
+    margin: 40px auto;
+    .contactInfo {
+      width: 100%;
+      height: auto;
+      .map {
+        iframe {
+          max-width: 100%;
+          height: 400px;
+        }
+      }
+      .infoRow {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+        .infoItems {
+          .infoItem {
+            gap: 10px;
+            margin-bottom: 20px;
+          }
+        }
+        .sendInfo {
+          display: grid;
+          grid-template-columns: auto auto;
+          input {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

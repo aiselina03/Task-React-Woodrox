@@ -1,0 +1,110 @@
+.detailPage {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .detailContainer {
+    width: 70%;
+    margin: 0px auto;
+    .detail {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      .detailImg {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+      .detailInfo {
+        margin-left: 50px;
+        h4 {
+          color: #222222;
+          font-size: 21px;
+          margin-bottom: 18px;
+        }
+        p {
+          line-height: 24px;
+          font-size: 14px;
+          margin-bottom: 25px;
+          font-weight: normal;
+          color: #777777;
+        }
+        ul {
+          li {
+            margin-bottom: 7px;
+            color: #777777;
+            font-weight: normal;
+            font-size: 14px;
+            span {
+              font-size: 14px;
+              color: #222222;
+              font-weight: bold;
+              margin-right: 10px;
+            }
+            .fa-star {
+              color: #f1cd09;
+            }
+          }
+        }
+      }
+    }
+    .detailText {
+      p {
+        margin-top: 30px;
+        line-height: 24px;
+        font-size: 14px;
+        font-weight: normal;
+        color: #777777;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .detailPage {
+    width: 100%;
+    height: auto;
+    .detailContainer {
+      width: 80%;
+      margin: 40px auto;
+      .detail {
+        display: grid;
+        grid-template-columns: auto;
+        .detailImg {
+          img {
+            max-width: 100%;
+          }
+        }
+        .detailInfo {
+          margin-top: 40px;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .detailPage {
+    width: 100%;
+    height: auto;
+    .detailContainer {
+      width: 80%;
+      margin: 30px auto;
+      .detail {
+        .detailImg {
+          img {
+            max-width: 100%;
+          }
+        }
+        .detailInfo {
+          margin-left: 50px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

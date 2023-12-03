@@ -1,0 +1,91 @@
+.features {
+  width: 100%;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .featuresContainer {
+    width: 70%;
+    margin: 0px auto;
+    .cardsHead {
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      line-height: 30px;
+      h1 {
+        color: #222222;
+      }
+      p {
+        margin: 30px 0 70px 0;
+        color: #777777;
+      }
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      .card {
+        background: #f9f9ff;
+        border-radius: 10px;
+        padding: 40px 60px 40px 40px;
+        font-family: "Roboto", sans-serif;
+        transition: all 800ms;
+        &:hover {
+          background-color: white;
+          box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+          .cardhead h4,
+          i {
+            color: #faba00;
+          }
+        }
+        .cardhead {
+          display: flex;
+          gap: 10px;
+          h4 {
+            font-size: 17px;
+            color: #222222;
+            padding-bottom: 15px;
+          }
+          i {
+            font-size: 20px;
+          }
+        }
+        p {
+          color: #777777;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}
+
+//responsive
+@media only screen and (max-width: 768px) {
+  .features {
+    width: 100%;
+    height: auto;
+    .featuresContainer {
+      width: 80%;
+      margin: 70px auto;
+      .cards {
+        display: grid;
+        grid-template-columns: auto;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .features {
+    width: 100%;
+    height: auto;
+    .featuresContainer {
+      width: 80%;
+      margin: 70px auto;
+      .cards {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+    }
+  }
+}

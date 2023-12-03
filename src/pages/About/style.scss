@@ -1,0 +1,38 @@
+.aboutPage {
+  background: url("https://preview.colorlib.com/theme/woodrox/img/banner/home-banner.jpg.webp")
+    no-repeat scroll top center;
+  width: 100%;
+  height: 60vh;
+
+  .aboutText {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 70px;
+    h1 {
+      font-size: 45px;
+    }
+    a,
+    .fa-solid {
+      color: white;
+      margin: 5px;
+      font-size: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+//responsive
+@media only screen and (max-width: 768px) {
+  .aboutPage {
+    width: 100%;
+    height: auto;
+    .aboutText {
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

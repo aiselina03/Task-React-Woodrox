@@ -1,0 +1,118 @@
+.homePage {
+  width: 100%;
+  height: 115vh;
+  background: url("https://preview.colorlib.com/theme/woodrox/img/banner/home-banner.jpg.webp")
+    no-repeat scroll center center;
+  background-size: cover;
+  color: white;
+
+  .homeContainer {
+    width: 70%;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+
+    .text {
+      h2 {
+        font-size: 36px;
+        font-weight: bold;
+        font-family: "Heebo", sans-serif;
+        line-height: 47px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        margin-bottom: 35px;
+        max-width: 555px;
+      }
+      button {
+        background: #faba00;
+        color: #fff;
+        font-family: "Roboto", sans-serif;
+        width: 148px;
+        font-size: 14px;
+        font-weight: 500;
+        border: 1px solid #faba00;
+        line-height: 48px;
+        border-radius: 3px;
+        text-align: center;
+        cursor: pointer;
+        transition: all 600ms;
+        &:hover {
+          background-color: transparent;
+          color: #faba00;
+        }
+      }
+    }
+    .icons {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      display: grid;
+      grid-template-columns: auto auto;
+      place-items: center;
+      height: 450px;
+      border-radius: 10px;
+      .homeItem {
+        padding: 40px;
+        cursor: pointer;
+        transition: all 600ms;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        &:hover {
+          background: #faba00;
+        }
+        .fa-light {
+          font-size: 40px;
+        }
+      }
+      .item {
+        padding: 40px;
+        cursor: pointer;
+        transition: all 600ms;
+        &:hover {
+          background: #faba00;
+        }
+        .fa-light {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
+//responsive
+@media only screen and (max-width: 768px) {
+  .homePage {
+    width: 100%;
+    height: auto;
+    .homeContainer {
+      .text {
+        padding-bottom: 30px;
+      }
+      .icons {
+        display: none;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .homePage {
+    width: 100%;
+    height: auto;
+    .homeContainer {
+      margin: auto;
+      display: grid;
+      grid-template-columns: auto;
+      padding-bottom: 40px;
+      .icons {
+        height: auto;
+        margin: 40px 0;
+        .homeItem {
+          padding: 40px;
+        }
+      }
+    }
+  }
+}

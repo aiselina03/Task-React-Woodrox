@@ -1,0 +1,122 @@
+.blogs {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .blogContainer {
+    width: 72%;
+    margin: 0px auto;
+    .blogsHead {
+      text-align: center;
+      line-height: 30px;
+      h1 {
+        color: #222222;
+      }
+      p {
+        margin: 30px 0 70px 0;
+        color: #777777;
+      }
+    }
+    .posts {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 30px;
+      .post {
+        img {
+          width: 100%;
+        }
+        .travelBtn {
+          background: #faba00;
+          border: 1px solid #faba00;
+          color: #fff;
+          width: 70px;
+          padding: 8px 18px;
+          font-size: 12px;
+          cursor: pointer;
+          margin: 20px 0;
+        }
+        .styleBtn {
+          color: #222222;
+          width: 100px;
+          padding: 8px 18px;
+          font-size: 12px;
+          border: 1px solid #eeeeee;
+          margin-left: 10px;
+          cursor: pointer;
+          transition: all 600ms;
+          background: transparent;
+          &:hover {
+            background: #faba00;
+            border: 1px solid #faba00;
+            color: #fff;
+          }
+        }
+        h4 {
+          text-transform: uppercase;
+          color: #222222;
+          font-size: 20px;
+          line-height: 24px;
+          margin-bottom: 15px;
+          cursor: pointer;
+          transition: all 600ms;
+          &:hover {
+            color: #faba00;
+          }
+        }
+        p {
+          font-size: 14px;
+          color: #777777;
+          margin: 20px 0;
+        }
+        span {
+          color: #222222;
+          font-size: 14px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+//responsive
+@media only screen and (max-width: 768px) {
+  .blogs {
+    width: 100%;
+    height: auto;
+    .blogContainer {
+      width: 75%;
+      margin: 50px auto;
+      .posts {
+        display: grid;
+        grid-template-columns: auto;
+        .post {
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .blogs {
+    width: 100%;
+    height: auto;
+    .blogContainer {
+      width: 75%;
+      margin: 50px auto;
+      .posts {
+        display: grid;
+        grid-template-columns: auto auto;
+        .post {
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
